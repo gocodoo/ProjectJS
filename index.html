@@ -49,7 +49,7 @@
             
             $.ajax({
                 url: urlApi,
-                type: 'GET',
+                type: 'GET',dataType: 'json',
                 success: function(response) {
                     console.log(response);
                     $('#row-card').empty();
