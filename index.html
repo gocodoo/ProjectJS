@@ -45,11 +45,11 @@
 
     <script>
         $(document).ready(function() {
-            const urlApi = 'https://raw.githubusercontent.com/gocodoo/datajson/refs/heads/master/product.json';
+            const urlApi = 'https://fakestoreapi.com/products';
             
             $.ajax({
                 url: urlApi,
-                type: 'GET',dataType: 'json',
+                type: 'GET',
                 success: function(response) {
                     console.log(response);
                     $('#row-card').empty();
